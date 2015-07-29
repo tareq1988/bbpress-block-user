@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: bbPress Block User
+ * Plugin Name: bbPress - Block User
  * Description: Block user in bbPress from creating new topics and replies
  * Plugin URI: http://wordpress.org/plugins/bbpress-block-user/
  * Author: Tareq Hasan
@@ -84,7 +84,7 @@ class BBP_Block_User {
      */
     function maybe_block_user( $permission ) {
         $user    = wp_get_current_user();
-        $blocked = get_option( '_bbp_block_user_list', array() );
+        $blocked = get_option( '_bbp_block_user_list', '' );
         $blocked = explode( "\n", $blocked );
 
         if ( in_array( $user->user_login, $blocked ) ) {
