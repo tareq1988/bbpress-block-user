@@ -86,6 +86,10 @@ class BBP_Block_User {
         $user    = wp_get_current_user();
         $blocked = get_option( '_bbp_block_user_list', '' );
         $blocked = explode( "\n", $blocked );
+        
+		if ( empty( $blocked ) ) {
+			return true;
+		}
 
         if ( in_array( $user->user_login, $blocked ) ) {
             return false;
