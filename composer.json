@@ -1,0 +1,17 @@
+{
+  "name": "tareq1988/bbpress-block-user",
+  "description": "Block user in bbPress from creating new topics and replies",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Tareq Hasan",
+      "email": "tareq@wedevs.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "~1.0"
+  }
+}
